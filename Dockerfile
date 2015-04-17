@@ -17,3 +17,6 @@ RUN locale-gen
 RUN echo "LANG=zh_CN.UTF-8" > /etc/default/locale
 RUN cp /usr/share/zoneinfo/posix/Asia/Chongqing /etc/localtime
 RUN echo "Asia/Chongqing" > /etc/timezone
+
+RUN apt-get install procps -y
+
