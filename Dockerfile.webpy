@@ -11,3 +11,6 @@ RUN pip install  flask gevent
 RUN pip install  gensim redis grpcio
 RUN pip install  scipy sklearn tensorflow-serving-api expiringdict
 RUN pip install  uwsgi gunicorn
+
+
+EXPOSE 9002
