@@ -12,5 +12,7 @@ RUN pip install  gensim redis grpcio
 RUN pip install  scipy sklearn tensorflow-serving-api expiringdict
 RUN pip install  uwsgi gunicorn
 
-
+RUN apt-get install bpython python-mysqldb -y
 EXPOSE 9002
+
+RUN useradd developer -u 1001 -M -G nogroup -N
