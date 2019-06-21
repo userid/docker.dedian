@@ -1,0 +1,5 @@
+FROM debian:stretch
+
+RUN      apt-get install -qqy  openjdk-8-jdk maven
+
+ENV LANG C.UTF-8
