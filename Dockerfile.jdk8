@@ -1,5 +1,6 @@
 FROM registry.cn-beijing.aliyuncs.com/userid/debian
 MAINTAINER "Gao Jie"
 
-RUN      apt-get install -qqy  openjdk-8-jdk maven
+RUN  apt-get update
+RUN  apt-get install -qqy  openjdk-8-jdk maven
 ENV LANG C.UTF-8
