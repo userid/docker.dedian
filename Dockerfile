@@ -4,9 +4,9 @@ FROM debian:stretch
 MAINTAINER "Gao Jie"
 
 
-RUN echo "deb http://mirrors.aliyun.com/debian/   stretch  main non-free contrib" > /etc/apt/sources.list
-RUN echo "deb http://mirrors.aliyun.com/debian/   stretch-updates main" >> /etc/apt/sources.list
-RUN echo "deb http://mirrors.aliyun.com/debian/   stretch-backports main" >> /etc/apt/sources.list
+RUN echo "deb https://mirrors.aliyun.com/debian/   stretch  main non-free contrib" > /etc/apt/sources.list
+RUN echo "deb https://mirrors.aliyun.com/debian/   stretch-updates main" >> /etc/apt/sources.list
+RUN echo "deb https://mirrors.aliyun.com/debian/   stretch-backports main" >> /etc/apt/sources.list
 
 ARG DEBIAN_FRONTEND=noninteractive
 
