@@ -4,6 +4,8 @@ FROM registry.cn-beijing.aliyuncs.com/userid/opencv:latest
 
 MAINTAINER "Gao Jie"
 
+RUN apt-get install wget -y
+
 ADD app /app/
 RUN wget https://github.com/userid/docker.dedian/raw/master/instances/open_nsfw/app/model/nsfw.model -O /app/model/nsfw.model
 RUN chown developer -R /app/
