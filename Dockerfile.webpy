@@ -2,7 +2,7 @@ FROM registry.cn-beijing.aliyuncs.com/userid/debian
 MAINTAINER "Gao Jie"
 
 RUN apt-get install python-pip vim -y
-RUN echo "[global]\nindex-url = https://mirrors.ustc.edu.cn/pypi/web/simple\n" > /etc/pip.conf
+RUN echo "[global]\nindex-url = https://mirrors.aliyun.com/pypi/simple\n" > /etc/pip.conf
 RUN echo "let skip_defaults_vim=1\nset mouse=\nsyntax on" >> /etc/vim/vimrc
 
 #RUN pip install  flask gensim gevent redis scipy sklearn grpcio tensorflow-serving-api expiringdict
