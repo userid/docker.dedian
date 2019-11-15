@@ -1,6 +1,6 @@
 #Debian for CN
 #VERSION 0.2
-FROM opencv:latest
+FROM registry.cn-beijing.aliyuncs.com/userid/opencv:latest
 
 MAINTAINER "Gao Jie"
 
