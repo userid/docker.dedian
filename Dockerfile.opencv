@@ -1,7 +1,7 @@
 FROM registry.cn-beijing.aliyuncs.com/userid/debian
 MAINTAINER "Gao Jie"
 
-RUN sudo rm -rf /var/lib/apt/lists/* && sudo apt update
+RUN rm -rf /var/lib/apt/lists/* && apt update
 
 RUN apt-get install python3-pip vim -y
 RUN apt-get install libsm6 libxrender1 libxext-dev -y

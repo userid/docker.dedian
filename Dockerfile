@@ -10,7 +10,7 @@ RUN echo "deb https://mirrors.aliyun.com/debian/   stretch-backports main" >> /e
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get update
+RUN apt-get update -y
 
 RUN apt-get install apt-utils  dialog -y
 RUN apt-get install libterm-readline-perl-perl -y
