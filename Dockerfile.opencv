@@ -1,6 +1,8 @@
 FROM registry.cn-beijing.aliyuncs.com/userid/debian
 MAINTAINER "Gao Jie"
-RUN apt-get update
+
+RUN sudo rm -rf /var/lib/apt/lists/* && sudo apt update
+
 RUN apt-get install python3-pip vim -y
 RUN apt-get install libsm6 libxrender1 libxext-dev -y
 RUN echo "[global]\nindex-url = https://mirrors.aliyun.com/pypi/simple\n" > /etc/pip.conf
