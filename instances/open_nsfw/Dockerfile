@@ -14,7 +14,7 @@ RUN chown developer -R /app/
 
 
 WORKDIR /app/
-USER developer
+#USER developer
 
 HEALTHCHECK CMD python3 check_images.py -p test/
 
